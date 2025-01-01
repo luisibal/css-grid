@@ -16,7 +16,7 @@
     <div class="item">4</div>
     <div class="item">5</div>
     <div class="item">6</div>
-    <div class="item">7</div>
+    <div class="item">7th element</div>
     <div class="item">8</div>
     <div class="item">9</div>
     <div class="item">10</div>
@@ -31,6 +31,12 @@
     .container {
       display: grid;
       grid-gap: 20px;
+
+      /* fr fractional unit represent the amount of space remaining after the other elements have been rendered */
+      /* auto makes auto adjust to content but it resizes the whole column*/
+      grid-template-columns: auto 2fr 1fr;
+      grid-template-rows: auto 2fr 1fr;
+
     }
   </style>
 </body>

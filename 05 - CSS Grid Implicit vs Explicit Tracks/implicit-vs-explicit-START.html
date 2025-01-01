@@ -14,11 +14,25 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
   </div>
 
   <style>
     .container {
       display: grid;
+      grid-gap: 20px;
+      /* (explictly created) */
+      grid-template-columns: 200px 300px;
+      /* (explictly created) */
+      grid-template-rows: 100px 200px;
+      /* if not explicitly created (created by grid-template-columns or grid-template-rows) they are implicit (rows or columns) */
+
+      /* solid line = start & end of explicitly created */
+      /* dotted/dashed line = implicitly created */
+
+      /* auto creates rows with the desired (implicitly created)*/
+      grid-auto-rows: 100px 200px;
     }
   </style>
 </body>
